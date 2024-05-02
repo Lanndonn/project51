@@ -66,20 +66,20 @@ class Program
             string choice Console.ReadLine();
 
             switch (choice)
-            { //need to write methods
+            { 
                 case "1":
-                    LoginMenu()
+                    LoginMenu();
                     break;
                 case "2":
-                    LogOutMenu()
+                    LogOutMenu();
                     break;
                 case "3":
-                    SignUpMenu()
+                    SignUpMenu();
                     break;
                 case "4":
-                    AppointmentsManu()
+                    AppointmentsMenu();
                     break;
-                case "q"
+                case "q":
                     done = true;
                     break;
                 default:
@@ -115,12 +115,12 @@ class Program
         }
         }
     }
-    static void LogoutMenu()
+    static void LogOutMenu()
     {
         authenticatedCustomer = null;
         System.Console.WriteLine("Logged out.");
     }
-     static void SignupMenu()
+     static void SignUpMenu()
     {
         System.Console.WriteLine("Enter your first name: ");
         string firstName = Console.ReadLine();
