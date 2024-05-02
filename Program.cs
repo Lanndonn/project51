@@ -136,8 +136,8 @@ class Program
 
         var newCustomer = new Customer
         {
-            FirstName = firstName,
-            LastNameName = lastNameName,
+            firstName = firstName,
+            lastName = lastNameName,
             username = username,
             password = password,
 

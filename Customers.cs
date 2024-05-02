@@ -11,14 +11,14 @@ public class Customers
     public Customers Authenticate(string username, string password)
     {
         var c = customerList.Where(o => (o.username == username) && (o.password == password));
-    }
 
-    if(c.count() > 0)
+        if(c.count() > 0)
     {
         return char.First();
     }
     else 
     {
         return string.Empty;
+    }
     }
 }
